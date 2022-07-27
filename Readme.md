@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Артем Демченко](https://up.htmlacademy.ru/adaptive/26/user/2051453).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly)
 
 ---
 

@@ -1,0 +1,398 @@
+.main-header {
+  background-color: #ffffff;
+}
+.main-nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.main-nav__item {
+  padding: 28px 0;
+  mix-blend-mode: normal;
+  box-shadow: 0 1px 0 #ececec;
+}
+.main-nav__item-link {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+.main-header__link {
+  padding: 22px 117px;
+}
+.promo {
+  background-color: #ffffff;
+  background-image: url("/img/promo__image.jpg");
+  background-repeat: no-repeat;
+}
+.promo__title {
+  margin: 0;
+  padding: 120px 30px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+}
+.promo__list {
+  margin: 0;
+  padding: 0;
+}
+.promo__item {
+  background-color: #63d1bb;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  font-style: normal;
+}
+.promo__item-toys {
+  background-color: #56c3b2;
+}
+.product {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+.name {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  color: #63d1bb;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.product__title {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+}
+.box__price {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #444444;
+  font-weight: 700;
+  font-style: normal;
+}
+.product__button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #444444;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  padding: 16px 65px;
+}
+.box__image {
+  display: block;
+}
+.stats {
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+}
+.stats__title {
+  margin: 0;
+  padding: 30px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+}
+.stats__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.feedback {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  font-weight: 400;
+  font-style: normal;
+}
+.feedback__title {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+}
+.user__name {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+}
+.slider__toggle {
+  padding: 13px 38px;
+  background-color: #ffffff;
+  mix-blend-mode: normal;
+  border: 1px solid #ececec;
+}
+.feedback__button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #444444;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  padding: 16px 65px;
+}
+.contacts {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
+  font-weight: 400;
+  font-style: normal;
+}
+.contacts__title {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+}
+.contacts__button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #444444;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  padding: 16px 65px;
+}
+.contacts__image {
+  display: block;
+}
+.main-footer {
+  background-color: #f1f1f1;
+}
+.social-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 31px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.copyright__text {
+  font-size: 19px;
+  line-height: 18px;
+}
+.catalog {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+  font-weight: 400;
+  font-style: normal;
+}
+.catalog__title {
+  margin: 0;
+  padding: 74px 41px;
+  background-color: #f1f1f1;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+}
+.catalog__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.card__title,
+.card__item-title {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+}
+.card__item-price {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+}
+.card__button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #444444;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  padding: 16px 65px;
+}
+.features {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+}
+.features__description {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+  font-weight: 400;
+  font-style: normal;
+}
+.type-block__item-title,
+.color-block__item-title,
+.data-block__item-title {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.features__warning {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+  font-weight: 400;
+  font-style: normal;
+}
+.features__button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #444444;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  padding: 16px 65px;
+}
+.features__title {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+  padding: 74px 22px;
+  background-color: #f1f1f1;
+  mix-blend-mode: normal;
+}
+.data-container__input,
+.mobile__input,
+.email__input {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffffff;
+  border: none;
+  mix-blend-mode: normal;
+  box-shadow: inset 0 -2px 0 #000000;
+  padding: 17px 10px 17px 0;
+  box-sizing: border-box;
+}
+.additionally__input {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffffff;
+  border: none;
+  mix-blend-mode: normal;
+  box-shadow: inset 0 -2px 0 #000000;
+  padding: 17px 10px 17px 0;
+  box-sizing: border-box;
+  border: 2px solid #444444;
+  box-shadow: none;
+  padding: 17px 89px 17px 17px;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/opensans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/opensansbold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+  font-display: swap;
+}
+/*# sourceMappingURL=style.css.map */

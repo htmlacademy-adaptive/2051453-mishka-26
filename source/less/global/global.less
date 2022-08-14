@@ -14,8 +14,17 @@ img {
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .indent {
     display: none;
+  }
+
+  .hidden {
+    display: block;
+    margin-right: auto;
   }
 }

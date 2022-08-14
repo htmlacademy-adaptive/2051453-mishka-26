@@ -14,3 +14,21 @@
   .basic-fonts(19px,#000000,700,19px);
 }
 
+.hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+  }
+
+  .hidden {
+    display: block;
+    margin-right: auto;
+  }
+
+  .main-footer__copyright {
+    margin-left: auto;
+  }
+}

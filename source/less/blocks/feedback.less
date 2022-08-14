@@ -18,6 +18,22 @@
   padding: 13px 38px;
   background-color: #ffffff;
   mix-blend-mode: normal;
-  border: 1px solid #ececec;
+  border: 1px solid #160c0c;
 }
 
+@media (min-width: @tablet-width) {
+  .feedback {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../img/feedback-bg.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .feedback__description {
+    grid-column: 1/-1;
+  }
+
+  .feedback__button {
+    grid-area: 1/2/2/3;
+  }
+}

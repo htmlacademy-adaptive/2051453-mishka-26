@@ -5,10 +5,26 @@
 
 .stats__title {
   margin: 0;
-  padding: 30px;
   .basic-fonts(25px,#000000,700,30px);
 }
 
 .stats__list {
   .basic-style ();
+}
+
+.stats-block-description {
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .stats__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 57px;
+    column-gap: 70px;
+  }
+
+  .stats {
+    padding: 83px 105px 83px 50px;
+  }
 }

@@ -1,0 +1,28 @@
+.contacts-group__item {
+  display: flex;
+}
+
+.contacts-group {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-group {
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 60px 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-group {
+    display: block;
+    margin: 0;
+    width: auto;
+    justify-self: start;
+  }
+}

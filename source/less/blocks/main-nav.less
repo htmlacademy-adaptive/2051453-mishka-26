@@ -55,16 +55,11 @@
     mix-blend-mode: normal;
     box-shadow: 0 1px 0 #ececec;
   }
-
-  .icon {
-    position: absolute;
-    left: 10%;
-    top: 40%;
-  }
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
+    min-width: @tablet-width;
     display: grid;
     grid-template-columns: 1fr 1fr 82px 1fr;
   }
@@ -110,6 +105,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    min-width: @desktop-width;
+  }
+
   .main-nav__item--catalog {
     order: -2;
   }

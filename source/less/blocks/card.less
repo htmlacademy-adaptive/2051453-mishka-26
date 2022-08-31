@@ -48,3 +48,28 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .card {
+    width: 316px;
+    display: grid;
+    grid-template-columns: 316px;
+    grid-template-rows: 462px 124px 73px;
+  }
+
+  .card__image {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    object-fit: none;
+  }
+
+  .card__box {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding: 27px 26px 36px 28px;
+  }
+
+  .card__item {
+    grid-column: 1/-1;
+  }
+}

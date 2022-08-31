@@ -10,4 +10,13 @@
   margin: 0;
   background-color: #ffffff;
   color: #444444;
+  min-width: @mobile-width-only;
+}
+
+@media (min-width: @tablet-width) {
+  min-width: @tablet-width;
+}
+
+@media (min-width: @desktop-width) {
+  min-width: @desktop-width;
 }

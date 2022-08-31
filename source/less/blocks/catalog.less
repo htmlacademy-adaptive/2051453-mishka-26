@@ -7,10 +7,17 @@
   padding: 74px 41px;
   background-color: #f1f1f1;
   .basic-fonts(27px,#000000,700,30px);
+  text-align: center;
 }
 
 .catalog__list {
   .basic-style();
+}
+
+@media (max-width: @tablet-width) {
+  .catalog__item {
+    padding: 30px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -18,5 +25,17 @@
     display: grid;
     gap: 54px;
     margin-top: 80px;
+  }
+
+  .catalog__title {
+    .basic-fonts(53px,#000000,700,57px);
+    padding: 102px 330px 112px 333px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__list {
+    display: flex;
+    justify-content: space-evenly;
   }
 }

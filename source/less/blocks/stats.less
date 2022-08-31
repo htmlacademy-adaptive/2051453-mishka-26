@@ -17,6 +17,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .stats {
+    padding: 83px 105px 83px 50px;
+  }
+
+  .stats__title {
+    .basic-fonts(43px,#000000,700,50px);
+    margin-bottom: 41px;
+  }
+
   .stats__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -24,7 +33,26 @@
     column-gap: 70px;
   }
 
+  .stats-block__logo {
+    margin-bottom: 13px;
+  }
+
+  .stats-block-description {
+    .basic-fonts(20px,#000000,700,22px);
+  }
+}
+
+@media (min-width: @desktop-width) {
   .stats {
-    padding: 83px 105px 83px 50px;
+    padding: 68px 297px 90px 225px;
+  }
+
+  .stats__title {
+    .basic-fonts(53px,#000000,700,57px);
+    margin-bottom: 40px;
+  }
+
+  .stats-block__logo {
+    margin-bottom: 20px;
   }
 }

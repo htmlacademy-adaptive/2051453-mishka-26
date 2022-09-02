@@ -93,9 +93,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    background-image: url("/img/product-tablet.jpg");
+    background-image: url("../img/product-tablet.jpg");
     background-repeat: no-repeat;
     background-position: 90% 100%;
+
+    @media (min-resolution) {
+      background-image: url("../img/product-tablet@2x.jpg");
+    }
   }
 
   .product__title {
@@ -133,12 +137,16 @@
 
 @media (min-width: @desktop-width) {
   .product {
-    background-image: url("/img/product-desctop.jpg");
+    background-image: url("../img/product-desctop.jpg");
     background-repeat: no-repeat;
     background-position: 93% 10px;
     padding: 54px 50px 73px 225px;
     position: relative;
     margin-top: 71px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/product-desctop.jpg");
+    }
   }
 
   .product__inner-description {

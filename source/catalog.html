@@ -9,6 +9,15 @@
 </head>
 
 <body class="page__body">
+
+  <svg class="repository-svg">
+    <symbol id="video" viewBox="0 0 32 22">
+      <path
+        d="m26 10 6-4v16l-6-4v-8Zm-2 0v8c0 2.2-1.8 4-4 4H4c-2.2 0-4-1.8-4-4v-8c0-2.2 1.8-4 4-4h10c0-1.1.9-2 2-2V2H5c-.6 0-1-.4-1-1s.4-1 1-1h12c.6 0 1 .4 1 1v3a2 2 0 0 1 2 2c2.2 0 4 1.8 4 4Zm-12 0H4v8h8v-8Zm8 1c0-.6-.4-1-1-1h-4c-.6 0-1 .4-1 1s.4 1 1 1h4c.6 0 1-.4 1-1Z"
+        fill="#63D1BB" />
+    </symbol>
+  </svg>
+
   <header class="main-header">
     <menu class="main-nav main-nav--dropdown">
       <a class="main-nav__link main-nav__link--active link" href="index.html">
@@ -114,11 +123,8 @@
       </ul>
       <div class="video catalog__item">
         <h3 class="video__title card__item-title">Процесс&ensp;<br class="indent">производства</h3>
-        <svg class="video__logo" width="32" height="22" viewBox="0 0 32 22" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="m26 10 6-4v16l-6-4v-8Zm-2 0v8c0 2.2-1.8 4-4 4H4c-2.2 0-4-1.8-4-4v-8c0-2.2 1.8-4 4-4h10c0-1.1.9-2 2-2V2H5c-.6 0-1-.4-1-1s.4-1 1-1h12c.6 0 1 .4 1 1v3a2 2 0 0 1 2 2c2.2 0 4 1.8 4 4Zm-12 0H4v8h8v-8Zm8 1c0-.6-.4-1-1-1h-4c-.6 0-1 .4-1 1s.4 1 1 1h4c.6 0 1-.4 1-1Z"
-            fill="#63D1BB" />
+        <svg class="video__logo" width="32" height="22">
+          <use xlink:href="#video"></use>
         </svg>
         <picture>
           <source media="(min-width: 1150px)" srcset="/img/catalog-desktop-4.jpg">

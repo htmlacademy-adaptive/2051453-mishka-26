@@ -8,13 +8,12 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
-import squoosh from 'gulp-libsquoosh';
 import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 
 // Styles
 export const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
+  return gulp.src('source/less/style.less', { sourcemaps: true })
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
@@ -41,29 +40,15 @@ const jsMinimizer = () => {
 }
 
 //Images
-const imagesOptimizer = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
-    .pipe(squoosh())
-    .pipe(gulp.dest('build/img'));
-}
-
-const imagesConverter = () => {
-  return gulp.src(['source/img/**/*.{jpg,png}', '!source/backgrounds/*.jpg'])
-    .pipe(squoosh({
-      webp: {quality: 80}, //На стандартном качестве местами видно мыльцо
-      avif: {quality: 80},
-    }))
-    .pipe(gulp.dest('build/img'));
-}
 
 const imagesCopy = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img//*.{png,jpg}')
     .pipe(gulp.dest('build/img'))
 }
 
 //SVG
 const svgOptimizer = () => {
-  return gulp.src(['source/img/**/*.svg', '!source/img/sprite/*.svg'])
+  return gulp.src(['source/img//*.svg', '!source/img/sprite/*.svg'])
     .pipe(svgmin())
     .pipe(gulp.dest('build/img'));
 }
@@ -107,7 +92,7 @@ const server = (done) => {
 
 // Watcher
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/sass//*.scss', gulp.series(styles));
   gulp.watch('source/js/**/*.js', gulp.series(jsMinimizer));
   gulp.watch('source/*.html', gulp.series(htmlMinimizer));
   gulp.watch('source/*.html').on('change', browser.reload);
@@ -116,14 +101,12 @@ const watcher = () => {
 // Build
 export const build = gulp.series(
   copy,
-  imagesOptimizer,
   gulp.parallel(
   styles,
   htmlMinimizer,
   jsMinimizer,
   svgOptimizer,
   svgSprite,
-  imagesConverter,
   ),
 );
 
@@ -137,7 +120,6 @@ export default gulp.series(
     jsMinimizer,
     svgOptimizer,
     svgSprite,
-    imagesConverter,
   ),
   gulp.series(
     server,

@@ -27,6 +27,16 @@
   .basic-fonts (19px,#ffffff,700,24px);
 }
 
+&:hover {
+  .component__title {
+    padding-bottom: 5px;
+  }
+
+  .component__logo {
+    opacity: 0.3;
+  }
+}
+
 .promo__item-toys {
   background-color: #56c3b2;
 }
@@ -53,6 +63,29 @@
   .promo__list {
     display: flex;
     justify-content: center;
+    background-image: url("../img/zigzag-fill-tablet.svg");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-repeat: repeat-x;
+      background-position: 0 100%;
+    }
+  }
+
+  .promo__item {
+    padding: 0;
+    padding-bottom: 34px;
+    background-image: url("../img/zigzag-fill-tablet.svg");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-repeat: repeat-x;
+      background-position: 0 100%;
+    }
   }
 }
 
@@ -74,5 +107,9 @@
     .basic-fonts(53px,#000000,700,57px);
     padding: 158px 225px;
     margin-bottom: 220px;
+  }
+
+  .promo__item {
+    padding-bottom: 34px;
   }
 }

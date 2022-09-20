@@ -9,7 +9,6 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import svgmin from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 
 // Styles
 export const styles = () => {
@@ -42,24 +41,19 @@ const jsMinimizer = () => {
 //Images
 
 const imagesCopy = () => {
-  return gulp.src('source/img//*.{png,jpg}')
+  return gulp.src('source/img/*.{png,jpg}')
     .pipe(gulp.dest('build/img'))
 }
 
 //SVG
 const svgOptimizer = () => {
-  return gulp.src(['source/img//*.svg', '!source/img/sprite/*.svg'])
+  return gulp.src(['source/img/*.svg', '!source/img/sprite.svg'])
     .pipe(svgmin())
     .pipe(gulp.dest('build/img'));
 }
 
 const svgSprite = () => {
-  return gulp.src('source/img/sprite/*.svg')
-    .pipe(svgmin())
-    .pipe(svgstore({
-    inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
+  return gulp.src('source/img/sprite.svg')
     .pipe(gulp.dest('build/img'));
 }
 
@@ -70,6 +64,7 @@ const copy = (done) => {
     'source/*.ico',
     'source/*.svg',
     'source/*webmanifest',
+    'source/*.{png,jpg}',
   ], {
   base: 'source'
   })
@@ -101,6 +96,7 @@ const watcher = () => {
 // Build
 export const build = gulp.series(
   copy,
+  imagesCopy,
   gulp.parallel(
   styles,
   htmlMinimizer,

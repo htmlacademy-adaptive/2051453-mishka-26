@@ -9,7 +9,6 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import svgmin from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 
 // Styles
 export const styles = () => {
@@ -20,6 +19,7 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }

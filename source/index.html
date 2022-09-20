@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
-  <link rel="apple-touch-icon" href="../img/favicon.png"> <!-- 180×180 -->
+  <link rel="apple-touch-icon" href="img/favicons/32.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
@@ -28,7 +28,7 @@
       <li class="main-nav__item main-nav__item--search">
         <a class="main-nav__item-link" href="#">
           <svg class="icon main-nav__search search__svg" width="18" height="18">
-            <use xlink:href="../img/sprite.svg#search"></use>
+            <use xlink:href="img/sprite.svg#search"></use>
           </svg>
           <span class="main-nav__item-title">Поиск товаров</span>
         </a>
@@ -36,7 +36,7 @@
       <li class="main-nav__item main-nav__item--basket basket">
         <a class="main-nav__item-link" href="#">
           <svg class="icon basket__svg" width="21" height="18">
-            <use xlink:href="../img/sprite.svg#basket"></use>
+            <use xlink:href="img/sprite.svg#basket"></use>
           </svg>
           Корзина:<span class="basket__item"> пока пуста</span>
         </a>
@@ -61,7 +61,7 @@
             интерьера
           </span>
           <svg class="component__logo" width="40" height="62">
-            <use xlink:href="../img/sprite.svg#lamp"></use>
+            <use xlink:href="img/sprite.svg#lamp"></use>
           </svg>
         </li>
         <li class="promo__item promo__item-toys component">
@@ -70,7 +70,7 @@
             игрушки
           </span>
           <svg class="component__logo" width="60" height="60">
-            <use xlink:href="../img/sprite.svg#lego"></use>
+            <use xlink:href="img/sprite.svg#lego"></use>
           </svg>
         </li>
       </ul>
@@ -106,37 +106,37 @@
       <ul class="stats__list">
         <li class="stats__item stats-block">
           <svg class="stats-block__logo" width="33" height="38">
-            <use xlink:href="../img/sprite.svg#stats-flower"></use>
+            <use xlink:href="img/sprite.svg#stats-flower"></use>
           </svg>
           <p class="stats-block-description">Экологически чистые материалы</p>
         </li>
         <li class="stats__item stats-block">
           <svg class="stats-block__logo" width="35" height="34">
-            <use xlink:href="../img/sprite.svg#stats-threads"></use>
+            <use xlink:href="img/sprite.svg#stats-threads"></use>
           </svg>
           <p class="stats-block-description">Связано вручную с любовью и умилением</p>
         </li>
         <li class="stats__item stats-block">
           <svg class="stats-block__logo" width="47" height="27">
-            <use xlink:href="../img/sprite.svg#stats-cash"></use>
+            <use xlink:href="img/sprite.svg#stats-cash"></use>
           </svg>
           <p class="stats-block-description">Скандинавский стиль по российской цене</p>
         </li>
         <li class="stats__item stats-block">
           <svg class="stats-block__logo" width="55" height="23">
-            <use xlink:href="../img/sprite.svg#stats-rocket"></use>
+            <use xlink:href="img/sprite.svg#stats-rocket"></use>
           </svg>
           <p class="stats-block-description">Поддержка отечественного производителя</p>
         </li>
         <li class="stats__item stats-block">
           <svg class="stats-block__logo" width="34" height="27">
-            <use xlink:href="../img/sprite.svg#stats-heart"></use>
+            <use xlink:href="img/sprite.svg#stats-heart"></use>
           </svg>
           <p class="stats-block-description">Увеличивает лайкина фотографиях</p>
         </li>
         <li class="stats__item stats-block">
           <svg class="stats-block__logo" width="33" height="32">
-            <use xlink:href="../img/sprite.svg#stats-gift"></use>
+            <use xlink:href="img/sprite.svg#stats-gift"></use>
           </svg>
           <p class="stats-block-description">Поставляется в подарочной упаковке</p>
         </li>
@@ -157,12 +157,12 @@
       <div class="feedback__slider slider-toggles">
         <button class="feedback__slider-toggle feedback__slider-toggle--current" type="button">
           <svg width="50" height="26">
-            <use xlink:href="../img/sprite.svg#arrow"></use>
+            <use xlink:href="img/sprite.svg#arrow"></use>
           </svg>
         </button>
         <button class="feedback__slider-toggle" type="button">
           <svg class="feedback__slider-arrow" width="50" height="26">
-            <use xlink:href="../img/sprite.svg#arrow"></use>
+            <use xlink:href="img/sprite.svg#arrow"></use>
           </svg>
         </button>
       </div>
@@ -171,7 +171,7 @@
     <aside class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <svg class="hidden contacts__logo" width="47" height="81">
-        <use xlink:href="../img/sprite.svg#contacts"></use>
+        <use xlink:href="img/sprite.svg#contacts"></use>
       </svg>
       <dl class="contacts-group">
         <div class="contacts-group__item">
@@ -188,41 +188,41 @@
         </div>
       </dl>
       <picture>
-        <source media="(min-width: 1150px)" srcset="../img/map-desktop.jpg, ../img/map-desktop@2x.jpg 2x" />
-        <source media="(min-width: 765px)" srcset="../img/map-tablet.jpg, ../img/map-tablet@2x.jpg 2x" />
-        <img class="contacts__image" src="../img/map-mobile.jpg" alt="Карта магазина"
-          srcset="../img/map-mobile@2x.jpg" />
+        <source media="(min-width: 1150px)" srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg 2x" />
+        <source media="(min-width: 765px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x" />
+        <img class="contacts__image" src="img/map-mobile.jpg" alt="Карта магазина"
+          srcset="img/map-mobile@2x.jpg" />
       </picture>
       <button class="contacts__button">Напишите нам</button>
       <svg class="contacts__svg" width="67" height="100">
-        <use xlink:href="../img/sprite.svg#location"></use>
+        <use xlink:href="img/sprite.svg#location"></use>
       </svg>
     </aside>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <svg class="hidden main-footer__wrapper-logo" width="102" height="34">
-          <use class=" main-footer__wrapper-logo-use" xlink:href="../img/sprite.svg#logo"></use>
+          <use class=" main-footer__wrapper-logo-use" xlink:href="img/sprite.svg#logo"></use>
         </svg>
         <div class="main-footer__social social">
           <ul class="main-footer__social-list">
             <li class="main-footer__social-item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <svg class="social__icon" width="28" height="22">
-                  <use xlink:href="../img/sprite.svg#vk"></use>
+                  <use xlink:href="img/sprite.svg#vk"></use>
                 </svg><span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="main-footer__social-item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <svg class="social__icon" width="28" height="22">
-                  <use xlink:href="../img/sprite.svg#youtube"></use>
+                  <use xlink:href="img/sprite.svg#youtube"></use>
                 </svg><span class="visually-hidden">Ютуб</span>
               </a>
             </li>
             <li class="main-footer__social-item">
               <a class="social__link social__link--telegramm" href="https://t.me/htmlacademy">
                 <svg class="social__icon" width="28" height="22">
-                  <use xlink:href="../img/sprite.svg#tg"></use>
+                  <use xlink:href="img/sprite.svg#tg"></use>
                 </svg><span class="visually-hidden">Телеграмм</span>
               </a>
             </li>
@@ -234,7 +234,7 @@
             <span class="visually-hidden">HTML Academy</span>
             <svg class="copyright__link-svg" width="27" height="35" viewBox="0 0 27 35" fill="none"
               xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-              <use xlink:href="../img/sprite.svg#copyright"></use>
+              <use xlink:href="img/sprite.svg#copyright"></use>
             </svg>
           </a>
         </div>

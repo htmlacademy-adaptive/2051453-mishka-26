@@ -13,23 +13,25 @@
 
 <body class="page__body">
   <header class="main-header">
-    <menu class="main-nav main-nav--dropdown">
-      <a class="main-nav__link main-nav__link--active link" href="index.html">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" />
-          <source media="(min-width: 765px)" srcset="img/mishka-logo-tablet.svg" />
-          <img class="main-nav__picture" src="img/mishka-logo-mobile.svg" alt="Логтип Мишка" />
-        </picture>
-      </a>
-      <li class="main-nav__item main-nav__item--catalog main-nav__item--background"><a class="main-nav__item-link"
+    <ul class="main-nav main-nav--dropdown">
+      <li class="main-nav__item main-nav__item--logo">
+        <a class="main-nav__link main-nav__link--active link" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" />
+            <source media="(min-width: 765px)" srcset="img/mishka-logo-tablet.svg" />
+            <img class="main-nav__picture" src="img/mishka-logo-mobile.svg" alt="Логтип Мишка" />
+          </picture>
+        </a>
+      </li>
+      <li class="main-nav__item main-nav__item--catalog background"><a class="main-nav__item-link"
           href="catalog.html">Каталог
           товаров</a></li>
-      <li class="main-nav__item main-nav__item--form main-nav__item--background"><a class="main-nav__item-link">Вязание
+      <li class="main-nav__item main-nav__item--form background"><a class="main-nav__item-link">Вязание
           на
           заказ</a></li>
       <li class="main-nav__item main-nav__item--search">
         <a class="main-nav__item-link" href="#">
-          <svg class="main-nav__search icon search__svg" width="18" height="18" viewBox="0 0 18 18">
+          <svg class="main-nav__search icon search-svg" width="18" height="18" viewBox="0 0 18 18">
             <use xlink:href="img/sprite.svg#search"></use>
           </svg>
           <span class="main-nav__item-title">Поиск товаров</span>
@@ -43,11 +45,11 @@
           Корзина:<span class="basket__item"> пока пуста</span>
         </a>
       </li>
-      <li class="hidden-desktop main-nav__item--background"><a class="main-nav__arrival-link" href="#">Новые
+      <li class="hidden-desktop background"><a class="main-nav__arrival-link" href="#">Новые
           поступления</a></li>
-      <li class="hidden-desktop main-nav__item--background"><a class="main-nav__sale-link" href="#">Распродажа</a></li>
-      <span class="main-nav__description main-nav__item--background hidden">Бесплатная доставка по России</span>
-    </menu>
+      <li class="hidden-desktop background"><a class="main-nav__sale-link" href="#">Распродажа</a></li>
+      <li class="main-nav__description background hidden">Бесплатная доставка по России</li>
+    </ul>
   </header>
   <main class="main-container">
     <section class="features">
@@ -77,31 +79,29 @@
         <fieldset class="color__item">
           <legend class="color__item-title">Цвет</legend>
           <div class="color__selection selection">
-            <input class="selection__input checkbox"
-              type="checkbox" value="white" id="white" name="color-group" checked="checked" />
+            <input class="selection__input checkbox" type="checkbox" value="white" id="white" name="color-group"
+              checked="checked" />
             <label class="selection__name" for="white">Белый</label>
           </div>
           <div class="color__selection selection">
-            <input class="selection__input checkbox"
-              type="checkbox" value="gray" id="gray" name="color-group" checked="checked" />
+            <input class="selection__input checkbox" type="checkbox" value="gray" id="gray" name="color-group"
+              checked="checked" />
             <label class="selection__name" for="gray">Серый</label>
           </div>
           <div class="color__selection selection">
-            <input class="selection__input checkbox"
-              type="checkbox" value="tiffany" id="tiffany" name="color-group" />
+            <input class="selection__input checkbox" type="checkbox" value="tiffany" id="tiffany" name="color-group" />
             <label class="selection__name" for="tiffany">Тиффани</label>
           </div>
           <div class="color__selection selection">
-            <input
-              class="selection__input checkbox" type="checkbox" value="black" id="black" name="color-group" />
-            <label class="selection__name" for="black">Черный</label></div>
+            <input class="selection__input checkbox" type="checkbox" value="black" id="black" name="color-group" />
+            <label class="selection__name" for="black">Черный</label>
+          </div>
           <div class="color__selection selection">
-            <input
-              class="selection__input checkbox" type="checkbox" value="pink" id="pink" name="color-group" />
-            <label class="selection__name" for="pink">Розовый</label></div>
+            <input class="selection__input checkbox" type="checkbox" value="pink" id="pink" name="color-group" />
+            <label class="selection__name" for="pink">Розовый</label>
+          </div>
           <div class="color__selection selection">
-            <input class="selection__input checkbox"
-              type="checkbox" value="orange" id="orange" name="color-group" />
+            <input class="selection__input checkbox" type="checkbox" value="orange" id="orange" name="color-group" />
             <label class="selection__name" for="orange">Оранжевый</label>
           </div>
         </fieldset>
@@ -112,22 +112,23 @@
               placeholder="Введите ваше имя*" name="name" id="name" required />
           </div>
           <div class="data__item-box">
-            <label class="data__item-label" for="second_name">Фамилия: </label><input class="data__item-input" type="text"
-              placeholder="Укажите фамилию*" name="surname" id="second_name" required />
+            <label class="data__item-label" for="second_name">Фамилия: </label><input class="data__item-input"
+              type="text" placeholder="Укажите фамилию*" name="surname" id="second_name" required />
           </div>
           <div class="data__item-box">
-            <label class="data__item-label" for="patronymic">Отчество:</label> <input class="data__item-input" type="text"
-              placeholder="Отчество, если желаете" name="patronymic" id="patronymic"/>
+            <label class="data__item-label" for="patronymic">Отчество:</label> <input class="data__item-input"
+              type="text" placeholder="Отчество, если желаете" name="patronymic" id="patronymic" />
           </div>
         </fieldset>
         <div class="mobile">
           <label class="mobile__title" for="mobile">Тел</label>
           <div class="mobile__box"><input class="mobile__input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-               name="telephone" id="mobile"/></div>
+              name="telephone" id="mobile" /></div>
         </div>
         <div class="email">
           <label class=" email__title" for="email">E-mail</label>
-          <div class="email__box"><input class="email__input" type="email" placeholder="Ваш Email*" name="e-mail" id="email" />
+          <div class="email__box"><input class="email__input" type="email" placeholder="Ваш Email*" name="e-mail"
+              id="email" />
           </div>
         </div>
         <div class="additionally">

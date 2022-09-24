@@ -11,6 +11,14 @@
   border-color: #62d1ba;
 }
 
+.checkbox:focus + label::before {
+  border-color: #62d1ba;
+}
+
+.radio:focus + label::before {
+  border-color: #62d1ba;
+}
+
 .radio:not(:disabled):not(:checked) + label:active::before {
   border-color: rgba(0, 0, 0, 0.3);
 }
@@ -18,7 +26,6 @@
 .checkbox:not(:disabled):not(:checked) + label:active::before {
   border-color: rgba(0, 0, 0, 0.3);
 }
-
 
 .selection__input {
   position: absolute;

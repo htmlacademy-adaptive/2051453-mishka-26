@@ -13,23 +13,24 @@
 
 <body class="page__body">
   <header class="main-header">
-    <menu class="main-nav main-nav--dropdown">
-      <a class="main-nav__link main-nav__link--active link" href="index.html">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" />
-          <source media="(min-width: 765px)" srcset="img/mishka-logo-tablet.svg" />
-          <img class="main-nav__picture" src="img/mishka-logo-mobile.svg" alt="Логотип Мишка" />
-        </picture>
-      </a>
-      <li class="main-nav__item main-nav__item--catalog main-nav__item--background"><a
-          class="main-nav__item-link">Каталог
+    <ul class="main-nav main-nav--dropdown">
+      <li class="main-nav__item main-nav__item--logo">
+        <a class="main-nav__link main-nav__link--active link" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" />
+            <source media="(min-width: 765px)" srcset="img/mishka-logo-tablet.svg" />
+            <img class="main-nav__picture" src="img/mishka-logo-mobile.svg" alt="Логотип Мишка" />
+          </picture>
+        </a>
+      </li>
+      <li class="main-nav__item main-nav__item--catalog background"><a class="main-nav__item-link">Каталог
           товаров</a></li>
-      <li class="main-nav__item main-nav__item--form main-nav__item--background"><a class="main-nav__item-link"
-          href="form.html">Вязание на
+      <li class="main-nav__item main-nav__item--form background"><a class="main-nav__item-link" href="form.html">Вязание
+          на
           заказ</a></li>
       <li class="main-nav__item main-nav__item--search">
         <a class="main-nav__item-link" href="#">
-          <svg class="main-nav__search icon search__svg" width="18" height="18">
+          <svg class="main-nav__search icon search-svg" width="18" height="18">
             <use xlink:href="img/sprite.svg#search"></use>
           </svg>
           <span class="main-nav__item-title">Поиск товаров</span>
@@ -43,11 +44,11 @@
           Корзина:<span class="basket__item"> пока пуста</span>
         </a>
       </li>
-      <li class="main-nav__item--background hidden-desktop"><a class="main-nav__arrival-link" href="#">Новые
+      <li class="background hidden-desktop"><a class="main-nav__arrival-link" href="#">Новые
           поступления</a></li>
-      <li class="main-nav__item--background hidden-desktop"><a class="main-nav__sale-link" href="#">Распродажа</a></li>
-      <span class="main-nav__description main-nav__item--background hidden">Бесплатная доставка по России</span>
-    </menu>
+      <li class="background hidden-desktop"><a class="main-nav__sale-link" href="#">Распродажа</a></li>
+      <li class="main-nav__description background hidden">Бесплатная доставка по России</li>
+    </ul>
   </header>
   <main class="main-container">
     <section class="catalog">

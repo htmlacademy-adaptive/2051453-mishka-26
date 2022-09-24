@@ -1,0 +1,90 @@
+.features {
+  .basic-fonts(17px,#000000,700,18px);
+}
+
+.features__warning {
+  .basic-fonts();
+  padding: 0 28px;
+  margin-top: 17px;
+  text-align: center;
+}
+
+.features__button {
+  .basic-button();
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 55px;
+  min-width: 84%;
+  height: 52px;
+}
+
+.features__title {
+  .basic-fonts(27px,#000000,700,30px);
+  padding: 74px 22px;
+  background-color: #f1f1f1;
+  mix-blend-mode: normal;
+  margin: 0;
+  text-align: center;
+}
+
+.features__description {
+  .basic-fonts();
+  text-align: start;
+  margin: 0;
+  margin-top: 17px;
+  padding: 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .features__box {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 8%;
+  }
+
+  .features__button {
+    min-width: 230px;
+    margin: 0;
+    padding: 0;
+    order: -1;
+  }
+
+  .features__description {
+    margin-top: 54px;
+    padding: 0 50px;
+    font-size: 15px;
+  }
+
+  .features__title {
+    .basic-fonts(43px,#000000,700,50px);
+    padding: 10px 175px 87px 175px;
+    background-image: url("../img/zigzag-fill-tablet.svg");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+  }
+
+  .features__warning {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__title {
+    .basic-fonts(53px,#000000,700,57px);
+    padding: 10px 320px 113px 320px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+  }
+
+  .features__description {
+    margin-top: 98px;
+    padding: 0 225px;
+  }
+
+  .features__box {
+    padding: 68px 225px;
+    padding-top: 0;
+  }
+}

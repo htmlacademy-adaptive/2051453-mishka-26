@@ -1,0 +1,72 @@
+.stats {
+  .basic-fonts(17px,#000000,700,20px);
+  background-color: #ffffff;
+  background-image: url("../img/zigzag-mobile.svg");
+  background-repeat: repeat-x;
+  padding: 28px 30px 58px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/zigzag-tablet.svg");
+    background-repeat: repeat-x;
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/zigzag-desktop.svg");
+      background-repeat: repeat-x;
+    }
+  }
+}
+
+.stats__title {
+  .basic-fonts(25px,#000000,700,30px);
+  width: 100%;
+  margin: 0;
+}
+
+.stats__list {
+  .basic-style ();
+}
+
+.stats-block-description {
+  margin: 0;
+  margin-top: 23px;
+}
+
+.stats-block__logo {
+  margin-top: 31px;
+}
+
+@media (min-width: @tablet-width) {
+  .stats {
+    padding: 83px 105px 83px 50px;
+  }
+
+  .stats__title {
+    .basic-fonts(43px,#000000,700,50px);
+    margin-bottom: 41px;
+  }
+
+  .stats__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 57px;
+    column-gap: 70px;
+  }
+
+  .stats-block-description {
+    .basic-fonts(20px,#000000,700,22px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .stats {
+    padding: 68px 297px 90px 225px;
+  }
+
+  .stats__title {
+    .basic-fonts(53px,#000000,700,57px);
+    margin-bottom: 40px;
+  }
+}
